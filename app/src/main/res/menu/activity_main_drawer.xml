@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dasacucak"
+            android:icon="@drawable/dasacucak"
+            android:title="@string/str_dasacucak" />
+
+        <item android:title="@string/str_jamanakacuyc"
+            android:icon="@drawable/timeview"
+            >
+            <menu>
+                <item
+                    android:id="@+id/nav_exams"
+                    android:icon="@drawable/exams"
+                    android:title="@string/title_activity_exams" />
+                <item
+                    android:id="@+id/nav_stugarqner"
+                    android:icon="@drawable/zachot"
+                    android:title="@string/str_Stugarqner" />
+
+                <item
+                    android:id="@+id/nav_works"
+                    android:icon="@drawable/works"
+                    android:title="@string/str_Ashxatanqner" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_examresults"
+            android:icon="@drawable/examresults"
+            android:title="@string/str_Exam_Results" />
+        <item
+            android:id="@+id/nav_myinfo"
+            android:icon="@drawable/myinfo"
+            android:title="@string/str_imtvjalnery" />
+    </group>
+
+</menu>

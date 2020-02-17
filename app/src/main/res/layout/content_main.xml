@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context="com.example.hrayr.polytech.MainActivity">
+
+    <ScrollView
+        android:id="@+id/homeMenu"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/home_dasajam"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="-5dp"
+                android:text="@string/str_jamanakacuyc"
+                android:textColor="#3c3c3c"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:onClick="ShowDasajam"/>
+            <TextView
+                android:id="@+id/home_Dasacucak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="Arial"
+                android:lineSpacingExtra="-5dp"
+                android:text="@string/str_dasacucak"
+                android:textColor="#3c3c3c"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:onClick="ShowDasacucak"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/home_exam_results"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="Arial"
+                android:lineSpacingExtra="-5dp"
+                android:text="@string/str_Exam_Results"
+                android:textColor="#3c3c3c"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:onClick="ShowExams"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
